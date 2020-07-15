@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    &lt;!&ndash;-->
+<!--    第一种，下标赋值-->
+<!--    &ndash;&gt;-->
+<!--    <bean id="user" class="com.ccj.pojo.User">-->
+<!--        <constructor-arg index="0" value="CC"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash; 第二种 参数类型赋值 &ndash;&gt;-->
+<!--    <bean id="user" class="com.ccj.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="CC"/>-->
+<!--    </bean>-->
+<!--  第三种 直接通过参数名去设置  -->
+    <bean id = "user" class="com.ccj.pojo.User">
+        <constructor-arg name="name" value="CC"/>
+    </bean>
+
+    <bean id="userT" class="com.ccj.pojo.UserT">
+
+    </bean>
+</beans>
